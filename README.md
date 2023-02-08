@@ -19,6 +19,17 @@ python3 manage.py runserver
 python3 manage.py migrate
 ````
 
+````bash
+# create the app my_app in the current project
+python3 manage.py startapp my_app
+````
+
 # Migrations
 
 Migrations are a way to configure the database.
+
+# Apps
+
+Django projects are organized by apps. Each apps has a function and can be activated/deactivated and used in other projects.
+
+Apps have to be added to the end of the **INSTALLED_APPS** list of `project_name/settings.py` to be loaded at the end (after the django's apps).
