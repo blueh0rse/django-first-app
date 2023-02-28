@@ -1,0 +1,17 @@
+{% extends 'listings/base.html' %} 
+{% block body %}
+
+<h1>Hello view!</h1>
+<h2>listings:</h2>
+<p>
+	I have {% if listings|length < 5 %} few {% elif listings|length < 10 %} some {% else %} a lot of {% endif %}
+	favourite listings.
+</p>
+<p>My {{ listings | length }} favourite listings are:</p>
+<!-- listings list -->
+<ul>
+	{% for listing in listings %}
+	<li>{{ listing.title }}</li>
+	{% endfor %}
+</ul>
+{% endblock %}
