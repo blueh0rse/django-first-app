@@ -1,0 +1,7 @@
+{% extends 'listings/base.html' %} {% block body %}
+
+<h2>{{ listing.title }}</h2>
+
+<p><a href="{% url 'listing-list' %}">Back</a></p>
+
+{% endblock %}
