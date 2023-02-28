@@ -15,7 +15,7 @@ python3 manage.py runserver
 ````
 
 ````bash
-# create the database
+# (re)create the database
 python3 manage.py migrate
 ````
 
@@ -24,9 +24,19 @@ python3 manage.py migrate
 python3 manage.py startapp my_app
 ````
 
+````bash
+# Start django shell
+python3 manage.py shell
+````
+
 # Migrations
 
 Migrations are a way to configure the database.
+
+````bash
+# Create a migration after model modification
+python3 manage.py makemigrations
+````
 
 # Apps
 
